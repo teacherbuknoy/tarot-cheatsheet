@@ -4,12 +4,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Tarot Meanings</title>
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link
-    href="https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@400;700;900&family=IM+Fell+DW+Pica:ital@0;1&display=swap"
-    rel="stylesheet">
+  <title>Tarot Cheatsheet</title>
   <style>
     *,
     *::before,
@@ -18,472 +13,49 @@
     }
 
     body {
+      display: grid;
       min-height: 100vh;
-      margin: 0;
-      font-family: "IM Fell DW Pica", serif;
-    }
-
-    h1 {
-      font-family: "Cinzel Decorative", serif;
-      text-align: center;
-      font-size: clamp(1.5rem, 10vw + 1rem, 3rem);
-      background: #EED7FF;
-      color: #2E0051;
+      grid-template-rows: min-content 1fr;
       margin: 0;
     }
 
-    table {
+    iframe {
       width: 100%;
-      max-width: 100vw;
-      margin-inline: auto;
-      border-collapse: collapse;
-      table-layout: fixed;
+      height: 100%;
     }
 
-    td,
-    th {
-      vertical-align: middle;
-    }
-
-    th {
-      font-family: "Cinzel Decorative", serif;
-    }
-
-    thead {
-      position: sticky;
-      top: 0;
-      background: #EED7FF;
-      color: #2E0051;
-    }
-
-    thead td {
-      text-align: center;
-      font-size: 1.25rem;
-    }
-
-
-    tbody {
-      font-size: 1.25rem;
-    }
-
-    thead th:not([rowspan]) {
-      font-size: 1.5rem;
-    }
-
-    tbody th {
-      font-size: 2rem;
-
-      &.court {
-        font-size: 1.25rem;
-      }
-    }
-
-    tbody td {
-      padding: 1rlh 0.5rlh;
-    }
-
-    tbody tr:nth-child(even) {
-      background-color: #00a1;
-    }
-
-    p {
+    nav ul {
+      display: flex;
       margin: 0;
-
-      &+p {
-        margin-block-start: 0.5rlh;
-      }
+      padding: 0;
+      list-style-type: none;
     }
 
-    .reversed {
-      color: #7D0015;
+    nav a {
+      --nav-radius: 16px;
+      display: flex;
+      padding: 1rem 2rem;
+      text-decoration: none;
+      color: #2E0051;
+      border-top-left-radius: var(--nav-radius);
+      border-top-right-radius: var(--nav-radius);
+      transition: all 300ms;
 
-      &::after {
-        content: " Rx";
-        font-style: italic;
-        font-size: 0.8rem;
+      &:hover, &:focus-visible {
+        background-color: #EED7FF;
       }
     }
   </style>
 </head>
 
 <body>
-  <h1>Minor Arcana</h1>
-  <table>
-    <thead>
-      <tr>
-        <th rowspan="2">Position</th>
-        <th rowspan="2">Keywords</th>
-        <th>Wands</th>
-        <th>Cups</th>
-        <th>Swords</th>
-        <th>Pentacles</th>
-      </tr>
-      <tr>
-        <td>
-          <p>Creativity. Passion. Ambition. Creative forces. Pure energy. Passion. Willpower.</p>
-          <p class="reversed">Impulsiveness. Burnout. Lack of direction. Delays.</p>
-        </td>
-        <td>
-          <p>Emotions. Relationships. Intuition. Connection.</p>
-          <p class="reversed">Emotional imbalance. Dependency. Repressed feelings. Disconnect.</p>
-        </td>
-        <td>
-          <p>Intellect. Communication. Clarity. Truth.Knowledge. Ideas.</p>
-          <p class="reversed">Conflict. Miscommunication. Anxiety. Deception.</p>
-        </td>
-        <td>
-          <p>Material wealth. Stability. Career. Body. Health. Home. Nature.</p>
-          <p class="reversed">Greed. Financial loss. Instability. Laziness.</p>
-        </td>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <th>1</th>
-        <td>
-          <p>Beginnings. Potential. Opportunity. Inspiration.</p>
-          <p class="reversed">Delays. Missed chances. Blocked potential. Setbacks.</p>
-        </td>
-
-        <td>
-          <p>Creation. Willpower. Inspiration. Desire. Potential. New beginnings. Creativity.</p>
-          <p class="reversed">Lack of energy. Lack of passion. Boredom. Delays. Missed opportunites. Setbacks</p>
-        </td>
-        <td>
-          <p>New feelings. Spirituality. Intuition. New love. Compassion. Creativity.</p>
-          <p class="reversed">Emotional loss. Blocked creativity. Emptiness. Emotional block. Sadness. Repressed
-            feelings.</p>
-        </td>
-        <td>
-          <p>Breakthrough. Clarity. Sharp Mind. Truth. Mental clarity.</p>
-          <p class="reversed">Confusion. Brutality. Chaos. Lack of clarity. Misuse of power.</p>
-        </td>
-        <td>
-          <p>Opportunity. Prosperity. New venture. Stability. Abundance.</p>
-          <p class="reversed">Lost opportunity. Missed chance. Bad investment. Financial setback. Instability.</p>
-        </td>
-      </tr>
-      <tr>
-        <th>2</th>
-        <td>
-          <p>Balance, duality, choices, partnerships</p>
-          <p class="reversed">Disharmony, indecision, imbalance, blocked paths</p>
-        </td>
-
-        <td>
-          <p>Planning. Making decisions. Leaving home. Foresight. Discovery.</p>
-          <p class="reversed">Fear of change. Playing safe. Bad planning. Indecision. Lack of planning</p>
-        </td>
-        <td>
-          <p>Unity. Partnership. Connection. Attraction. Harmony.</p>
-          <p class="reversed">Imbalance. Broken communication. Tension. Breakup. Discord. Separation.</p>
-        </td>
-        <td>
-          <p>Difficult Choices. Indecision. Stalemate. Crossroads.</p>
-          <p class="reversed">Lesser of two evils. Indecision. Stalemate. Confusin. Conflict. Lies revealed. Confession.
-          </p>
-        </td>
-        <td>
-          <p>Balancing decisions. Priorities. Adaptation. Time management.</p>
-          <p class="reversed">Loss of blance. Disorganized. Overwhelmed. Financial struggle. Imbalance.</p>
-        </td>
-      </tr>
-      <tr>
-        <th>3</th>
-        <td>
-          <p>Growth. Creativity. Teamwork. Expansion. Completion of phase. Groups. Communication.</p>
-          <p class="reversed">Lack of progress. Disunity. Delays. Frustration.</p>
-        </td>
-        <td>
-          <p>Looking ahead. Expansion. Rapid growth. Confidence. Progress.</p>
-          <p class="reversed">Obstacles. Delay. Frustration. Lack of foresight.</p>
-        </td>
-        <td>
-          <p>Friendship. Community. Happiness. Celebration. Social gatherings. Joy.</p>
-          <p class="reversed">Overindulgence. Gossip. Isolation. Third-party interference.</p>
-        </td>
-        <td>
-          <p>Heartbreak. Suffering. Grief. Sorrow. Betrayal.</p>
-          <p class="reversed">Recovery. Forgiveness. Moving on. Healing. Overcoming pain.</p>
-        </td>
-        <td>
-          <p>Teamwork. Collaboration. Building together. Skill building.</p>
-          <p class="reversed">Lack of teamwork. Disorganized. Group conflict. Miscommunication. Competition.</p>
-        </td>
-      </tr>
-      <tr>
-        <th>4</th>
-        <td>
-          <p>Stability. Structure. Foundation. Contemplation. Manifestation. Endurance.</p>
-          <p class="reversed">Stagnation. Rigidity. Restlessness. Withdrawal.</p>
-        </td>
-        <td>
-          <p>Community. Home. Celebration. Harmony.</p>
-          <p class="reversed">Lack of support. Transcience. Home conflicts. Instability.</p>
-        </td>
-        <td>
-          <p>Apathy. Contemplation. Disconnection. Reevaluatio.n</p>
-          <p class="reversed">Choosing happiness. Acceptance. Awareness. Siezing opportunities. Sudden awareness.</p>
-        </td>
-        <td>
-          <p>Rest. Restoration. Contemplation. Healing.</p>
-          <p class="reversed">Restlessness. Burnout. Stress. Inability to relax.</p>
-        </td>
-        <td>
-          <p>Conservation. Security. Frugality. Holding on control.</p>
-          <p class="reversed">Greediness. Stinginess. Possessiveness. Materialism. Insecuirty.</p>
-        </td>
-      </tr>
-      <tr>
-        <th>5</th>
-        <td>
-          <p>Conflict. Change. Challenges. Instability. Adversity. Conflict. Movement. Fluctuation.</p>
-          <p class="reversed">Resolution. Recovery. Acceptance. Reconciliation.</p>
-        </td>
-
-        <td>
-          <p>Competition. Conflict. Reality. Competition. Disagreement. Rivalry.</p>
-          <p class="reversed">Avoiding conflict. Respecting differences. Resolution. Compromise. Harmony.</p>
-        </td>
-        <td>
-          <p>Loss. Grief. Disappointment. Mourning. Regret.</p>
-          <p class="reversed">Acceptance. Moving on. Finding peace. Healing. Forgiveness.</p>
-        </td>
-        <td>
-          <p>Unbridled ambition. Win at all costs. Sneakiness. Conflict. Betryal. Tension.</p>
-          <p class="reversed">Lingering resentment. Desire to reconcile. Desire to forgive. Making amends. Moving on.
-          </p>
-        </td>
-        <td>
-          <p>Need. Poverty. Insecurity. Low Resources. Struggle.</p>
-          <p class="reversed">Recovery. Charity. Improvement. Rebuilding. Acceptance.</p>
-        </td>
-      </tr>
-      <tr>
-        <th>6</th>
-        <td>
-          <p>Harmony. Healing. Success. Cooperation.</p>
-          <p class="reversed">Lack of progress. Disharmony. Challenges. Emotional baggage.</p>
-        </td>
-        <td>
-          <p>Victory. Success. Public reward. Recognition. Confidence.</p>
-          <p class="reversed">Excess pride. Lack of recognition. Punishment. Fall from grace. Self-doubt.</p>
-        </td>
-        <td>
-          <p>Familiarity. Memories. Healing. Restoration. Nostalgia. Childhood. Innocence. Reunions.</p>
-          <p class="reversed">Moving forward. Leaving home. Independence. Living in the past. Stuck. Unrealistic
-            expectations.</p>
-        </td>
-        <td>
-          <p>Transition. Leaving behind. Moving on. Recovery. Change.</p>
-          <p class="reversed">Emotional baggage. Unresolved issues. Resisting transition. Stagnation. Unfinished
-            business.</p>
-        </td>
-        <td>
-          <p>Charity. Generosity. Sharing. Giving. Balance.</p>
-          <p class="reversed">Strings attached. Stinginess. Power and domination. Debt. Selfishness. Inequality.</p>
-        </td>
-      </tr>
-      <tr>
-        <th>7</th>
-        <td>
-          <p>Reflection. Assessment. Ambition. Perseverance. Reevaluation. Investigation. Introspection.</p>
-          <p class="reversed">Confusion. Deception. Frustration. Impatience.</p>
-        </td>
-
-        <td>
-          <p>Perseverance. Mounting a defense. Maintaining control. Standing ground. Resilience.</p>
-          <p class="reversed">Giving up. Lack of confidence. Overwhelmed. Defensiveness. Insecurity.</p>
-        </td>
-        <td>
-          <p>Searching for purpose. Choices. Daydreaming.</p>
-          <p class="reversed">Diversion. Disarray. Lack of purpose. Confusion.</p>
-        </td>
-        <td>
-          <p>Deception. Trickery. Tactics and strategy. Betrayal. Cunning.</p>
-          <p class="reversed">Coming clean. Rethinking approach. Deception. Confession. Regret. Conscience.</p>
-        </td>
-        <td>
-          <p>Hard work. Perseverance. Diligence. Patience. Long-term view. Investment.</p>
-          <p class="reversed">Work without results. Distractions. No rewards. Lack of growth. Impatience. Wasted
-            efforts. Frustration.</p>
-        </td>
-      </tr>
-      <tr>
-        <th>8</th>
-        <td>
-          <p>Movement. Progress. Mastery. Strength. Achievement. Rebirth. Changes.</p>
-          <p class="reversed">Stagnation. Misalignment. Lack of focus. Obstacles.</p>
-        </td>
-        <td>
-          <p>Rapid action. Movement. Quick decisions. Speed. Progress.</p>
-          <p class="reversed">Panic. Waiting. Slowing down. Delays. Frustration. Holding back. Miscomunication.</p>
-        </td>
-        <td>
-          <p>Walking away. Disillusionment. Leaving something behind. Introspection. Abandonment. Self-discovery.</p>
-          <p class="reversed">Avoidance. Fear of change. Fear of loss. Stagnation. Confusion. Drifting aimlessly.</p>
-        </td>
-        <td>
-          <p>Imprisonment. Entrapment. Self-victimization. Restriction. Limitations. Helplessness.</p>
-          <p class="reversed">Self-acceptance. New perspective. Freedom. Release. Self-empowerment. New perspective.</p>
-        </td>
-        <td>
-          <p>Diligence. Passion. High standards. Hard work. Skill. Dedication. Craftsmanship.</p>
-          <p class="reversed">No passion. Uninspired. No motivation. Lack of focus. Negligence. Shortcuts.</p>
-        </td>
-      </tr>
-      <tr>
-        <th>9</th>
-        <td>
-          <p>Fulfillment. Resilience. Self-reflection. Satisfaction. Transition period. Attainment. Nearing completion.
-          </p>
-          <p class="reversed">Overwhelm. Dissatisfaction. Anxiety. Setbacks.</p>
-        </td>
-
-        <td>
-          <p>Resilience. Grit. Taking last stand. Determination. Boundaries. Courage.</p>
-          <p class="reversed">Exhaustion. Fatigue. Unsure motives. Vulnerability. Overwhelmed. Giving up.</p>
-        </td>
-        <td>
-          <p>Satisfaction. Luxury. Emotional stability. Contentment. Happiness. Gratitude.</p>
-          <p class="reversed">Lack of true joy. Smugness. Dissatisfaction. Indulgence. Unmet dreams. Arrogance.</p>
-        </td>
-        <td>
-          <p>Anxiety. Hopelessnes. Trauma. Worry. Nightmares. Guilt.</p>
-          <p class="reversed">Hope. Reaching out for help. Despair. Inner turmoil. Recovery. Letting go. End of
-            suffering.</p>
-        </td>
-        <td>
-          <p>Fruits of labor. Rewards. Independence. Luxury. Success. Self-sufficiency.</p>
-          <p class="reversed">Living beyond means. Obsession with work. Financial insecurity. Dependence.
-            Overindulgence. Setbacks.</p>
-        </td>
-      </tr>
-      <tr>
-        <th>10</th>
-        <td>
-          <p>Completion. Responsibility. Legacy. Fulfillment. Completing cycles. Coming full circle. Moving forward.</p>
-          <p class="reversed">Burdens. Endings. Overextension. Avoidance.</p>
-        </td>
-        <td>
-          <p>Accomplishment. Responsibility. Burden. Struggle. Hard work.</p>
-          <p class="reversed">Burnt out. Stressed. Unwilling to delegate. Release. Avoidance. Collapse under pressure.
-          </p>
-        </td>
-        <td>
-          <p>Inner happiness. Fulfillment. Dreams coming true. Harmony. Family. Bliss.</p>
-          <p class="reversed">Shattered dreams. Broken family. Domestic dispute.</p>
-        </td>
-        <td>
-          <p>Failure. Collapse. Defeat. Backstabbing. Betrayal. Painful endings. Loss.</p>
-          <p class="reversed">Can't get worse. Only upwards. Inevitable end. Recovery. Regeneration. Healing.
-            Resilience.</p>
-        </td>
-        <td>
-          <p>Legacy. Inheritance. Culmination. Wealth. Family. Stability.</p>
-          <p class="reversed">Fleeting success. Lack of stability. Lack of resources. Financial failure. Family
-            disputes.</p>
-        </td>
-      </tr>
-      <tr>
-        <th class="court">Page</th>
-        <td>
-          <p>Curiosity. Eagerness to learn. Playful innocence. Genuine excitement. Transformation.</p>
-          <p class="reversed">Immaturity. Inexperience. Indecision. Hesitation.</p>
-        </td>
-        <td>
-          <p>Exploration. Excitement. Freedom. Adventure. Enthusiasm. Discovery. Potential.</p>
-          <p class="reversed">Lack of direction. Procrastination. Conflict. Immaturity. Hesitation. Setbacks.</p>
-        </td>
-        <td>
-          <p>Happy surprise. Dreamer. Sensitivity. Possibility. Curiosity. Intuition. Creativity.</p>
-          <p class="reversed">Emotional immaturity. Insecurity. Disappointment. Suppressed creativity.</p>
-        </td>
-        <td>
-          <p>Curiosity. Restlessness. Mental energy. Communication. New ideas. Alertness.</p>
-          <p class="reversed">Deception. Manipulation. All talk. Gossip. Defensiveness.</p>
-        </td>
-        <td>
-          <p>Ambition. Desire. Diligence. Craving new venture. Opportunity. Growth.</p>
-          <p class="reversed">Lack of commitment. Greed. Laziness. Irresponsibility. Missed opportunities.</p>
-        </td>
-      </tr>
-      <tr>
-        <th class="court">Knight</th>
-        <td>
-          <p>Passion. Extremes. Action. Ambition. Pursuit. Dedication.</p>
-          <p class="reversed">Impulsiveness. Recklessness. Lack of focus. Inconsistency.</p>
-        </td>
-
-        <td>
-          <p>Action. Adventure. Fearlessness. Energy. Courage.</p>
-          <p class="reversed">Anger. Impulsivity. Recklessness. Impatience. Lack of direction.</p>
-        </td>
-        <td>
-          <p>Idealistic. Romantic. Following one's heart. Imagination. Idealism. Romance. Charm.</p>
-          <p class="reversed">Fickleness. Moodiness. Fantasy. Jealousy. Unrealistic. Disappointment.</p>
-        </td>
-        <td>
-          <p>Action. Impulsiveness. Defending beliefs. Determination. Ambition. Assertiveness. Focus.</p>
-          <p class="reversed">No direction. Disregard for consequence. Unpredictability. Impulsiveness. Recklessness.
-            Cruelty. Missed details.</p>
-        </td>
-        <td>
-          <p>Efficiency. Hard work. Responsibility. Routine.</p>
-          <p class="reversed">Obsessiveness. Work without reward. Laziness. Irresponsibility. Stagnation. Boredom.</p>
-        </td>
-      </tr>
-      <tr>
-        <th class="court">Queen</th>
-        <td>
-          <p>Nurturing. Intuition. Support. Inner strength. Internal. Feminine. Receptive. Inwardly focused. Expression
-            through personality.</p>
-          <p class="reversed">Emotional imbalance. Dependency. Insecurity. Manipulation.</p>
-        </td>
-        <td>
-          <p>Courage. Determination. Passion. Joy. Confidence. Determination. Independence. Vibrancy.</p>
-          <p class="reversed">Selfishness. Insecurity. Jealousy. Aggression.</p>
-        </td>
-        <td>
-          <p>Compassion. Calm. Comfort. Intuition. Nurturing.</p>
-          <p class="reversed">Martyrdom. Insecurity. Co-dependency. Repressed emotions. Emotional instability.</p>
-        </td>
-        <td>
-          <p>Complexity. Perceptive. Clear mindedness. Truth. Clarity. Directness. Perceptiveness.</p>
-          <p class="reversed">Cold hearted. Cruel bitterness. Criticism. Pessimism. Overthinking.</p>
-        </td>
-        <td>
-          <p>Practicality. Creature comforts. Security. Resourcefulness. Nurturing.</p>
-          <p class="reversed">Self-centeredness. Jealousy. Smothering. Work-life imbalance. Neglect. Materialism.
-            Overindulgence.</p>
-        </td>
-      </tr>
-      <tr>
-        <th class="court">King</th>
-        <td>
-          <p>Authority. Control. Wisdom. Mastery. External. Masculine. Outwardly focused.</p>
-          <p class="reversed">Dominance. Inflexibility. Misuse of power. Arrogance.</p>
-        </td>
-        <td>
-          <p>Big picture. Leader. Overcoming challenges. Vision. Leadership. Courage. Inspiration.</p>
-          <p class="reversed">Impulsive. Overbearing. Impossible expectations. Dictatorial. Impulsive. Ruthlessness.
-            Intolerance.</p>
-        </td>
-        <td>
-          <p>Emotional control. Balance between heart and head. Compassion. Diplomacy. Balance.</p>
-          <p class="reversed">Coldness. Moodiness. Emotional manipulation. Emotional imbalance. Dishonesty.</p>
-        </td>
-        <td>
-          <p>Head over heart. Truth. Discipline. Intellect. Authority. Integrity. Clear thinking.</p>
-          <p class="reversed">Manipulative. Cruel. Weakness. Misuse of power.</p>
-        </td>
-        <td>
-          <p>Abundance. Prosperity. Provider. Generosity. Wealth. Stability. Discipline.</p>
-          <p class="reversed">Greed. Indulgence. Excess. Materialism. Stubbornness. Lack of success.</p>
-        </td>
-      </tr>
-    </tbody>
-  </table>
+  <nav>
+    <ul>
+      <li><a href="major-arcana.html" target="viewport">Major Arcana</a></li>
+      <li><a href="minor-arcana.html" target="viewport">Minor Arcana</a></li>
+    </ul>
+  </nav>
+  <iframe src="empty-state.html" frameborder="0" name="viewport"></iframe>
 </body>
 
 </html>
