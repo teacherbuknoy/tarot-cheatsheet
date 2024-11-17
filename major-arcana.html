@@ -1,0 +1,638 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tarot Meanings - Major Arcana</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@400;700;900&family=IM+Fell+DW+Pica:ital@0;1&display=swap"
+    rel="stylesheet">
+  <style>
+    *,
+    *::before,
+    *::after {
+      box-sizing: border-box;
+    }
+
+    body {
+      min-height: 100vh;
+      margin: 0;
+      font-family: "IM Fell DW Pica", serif;
+    }
+
+    h1 {
+      font-family: "Cinzel Decorative", serif;
+      text-align: center;
+      font-size: clamp(1.5rem, 10vw + 1rem, 3rem);
+      background: #EED7FF;
+      color: #2E0051;
+      margin: 0;
+    }
+
+    h2 {
+      font-family: "Cinzel Decorative", serif;
+      font-size: clamp(1.5rem, 4cqw + 1rem, 2rem);
+      margin: 0;
+    }
+
+    ol {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(min(50ch, 100%), 1fr));
+      margin: 0;
+      margin-inline: auto;
+      padding: 0;
+
+      li {
+        margin-inline-start: 3lh;
+        container-type: inline-size;
+      }
+
+      li::marker {
+        font-size: 2rem;
+        font-family: "Cinzel Decorative", serif;
+      }
+    }
+
+    p {
+      margin: 0;
+      font-size: 1.25rem;
+
+      &+p {
+        margin-block-start: 0.5rlh;
+      }
+    }
+
+    .reversed {
+      color: #7D0015;
+
+      &::after {
+        content: " Rx";
+        font-style: italic;
+        font-size: 0.8rem;
+      }
+    }
+
+    article {
+      display: grid;
+      grid-template-columns: min-content 1fr;
+      padding: 1rem;
+      gap: 0.5rlh;
+      column-gap: 2.5em;
+    }
+
+    .major-arcana {
+      object-fit: contain;
+      aspect-ratio: 1/1;
+      width: 5em;
+      background-color: #EED7FF;
+      outline: 2px solid #2E0051;
+      border-radius: 1rem;
+      grid-column: 1/2;
+      grid-row: 1/5;
+    }
+
+    .entry,
+    .meta {
+      display: flex;
+      gap: 1lh;
+      font-size: 1.5rem;
+      align-items: center;
+
+      img {
+        object-fit: contain;
+        aspect-ratio: 1/1;
+        width: 1em;
+        display: inline-block;
+        margin: 0;
+      }
+    }
+
+    .entry {
+      gap: 0.25lh;
+      text-transform: lowercase;
+    }
+  </style>
+</head>
+
+<body>
+  <h1>Major Arcana</h1>
+  <ol start="0">
+    <li>
+      <article>
+        <img class="major-arcana" src="assets/ma-1.png" alt="">
+        <h2>The Fool</h2>
+        <div class="meta">
+          <div class="entry">
+            <img src="assets/uranus.png" alt="">
+            <span>Uranus</span>
+          </div>
+          <div class="entry">
+            <img src="assets/air.png" alt="">
+            <span>Air</span>
+          </div>
+        </div>
+        <p>New beginnings. Innocence. Adventure. Freedom. Spontaneity. Travel Idealism. Originality. Free spirit. New
+          relationship.
+          Fun, light romance. New job. New business. A breath of fresh air at work. Spontaneous spending. Financial
+          opportunities.</p>
+        <p class="reversed">Recklessness. Being taken advantage of. Inconsideration. Lack of commitment. Risky
+          relationship. Stale, boring job.
+          Reckless actions at work. Caution around financial opportunities. Foolish purchases.</p>
+      </article>
+    </li>
+    <li>
+      <article>
+        <img class="major-arcana" src="assets/ma-2.png" alt="">
+        <h2>The Magician</h2>
+        <div class="meta">
+          <div class="entry">
+            <img src="assets/mercury.png" alt="">
+            <span>Mercury</span>
+          </div>
+          <div class="entry">
+            <img src="assets/air.png" alt="">
+            <span>Air</span>
+          </div>
+        </div>
+        <p>Manifestation. Creator. Resourcefulness. Inspired Action. Willpower. Logic. Skill. Intellect. Power. Desire.
+          Skill.
+          Ability. Concentration. Manifestation. Creating opportunities for love. Being proactive in love. Harnessing
+          career
+          opporunities. Determination and drive. Pursuing financial opportunity. Making use of skills.</p>
+        <p class="reversed">Manipulation. Cunning. Trickery. Wasted talent. Illusion. Deception. Low willpower for love.
+          Unwillingness to take
+          chances. Deception in the workplace. Missed financial opporunity. Not using skills for financial gain.</p>
+      </article>
+    </li>
+    <li>
+      <article>
+        <img class="major-arcana" src="assets/ma-3.png" alt="">
+        <h2>High Priestess</h2>
+        <div class="meta">
+          <div class="entry">
+            <img src="assets/moon.png" alt="">
+            <span>moon</span>
+          </div>
+          <div class="entry">
+            <img src="assets/air.png" alt="">
+            <span>Air</span>
+          </div>
+        </div>
+        <p>Unconscious. Intuition. Mystery. Spirituality. Higher power. Inner voice. Remain patient in love. Calm
+          exterior
+          with
+          inner passion. Intimacy. Education. Creative inspiration. Guide. Mentor. Use instincts in the workplace.
+          Keeping
+          your
+          financial situation private.</p>
+        <p class="reversed">Repressed intuition. Hidden motives. Superficiality. Confusion. Cognitive dissonance.
+          Ignoring
+          intuition in romance.
+          Hiding true self with lover. Feeling isolated. Lacking project information. Rejecting intuition. Lack of
+          information.
+          Not knowing all the facts.</p>
+      </article>
+    </li>
+    <li>
+      <article>
+        <img class="major-arcana" src="assets/ma-4.png" alt="">
+        <h2>The Empress</h2>
+        <div class="meta">
+          <div class="entry">
+            <img src="assets/venus.png" alt="">
+            <span>venus</span>
+          </div>
+          <div class="entry">
+            <img src="assets/earth.png" alt="">
+            <span>earth</span>
+          </div>
+        </div>
+        <p>Motherhood. Nurturing. Femininity. Nature. Harmony. Fertility. Sensuality. Beauty. Creativity. Divine
+          feminine.
+          Nurturing. Abundance. Supportive lover. Sensual committed relationship. Nurturing colleagues. Freshening up
+          office.
+          Creative period at work. Material comfort. Giving. Sharing material wealth. Generosity.</p>
+        <p class="reversed">Insecurity. Overbearing. Negligence. Smothering. Lack of growth. Lack of progress. Lack of
+          self-worth. Jealous. Clingy
+          lover. Lack of progress in love. Feeling insecure at work. Not growing skills. Stale job. Feeling insecure
+          about
+          finances. Despite being stable.</p>
+      </article>
+    </li>
+    <li>
+      <article>
+        <img class="major-arcana" src="assets/ma-5.png" alt="">
+        <h2>The Emperor</h2>
+        <div class="meta">
+          <div class="entry">
+            <img src="assets/aries.png" alt="">
+            <span>aries</span>
+          </div>
+          <div class="entry">
+            <img src="assets/fire.png" alt="">
+            <span>fire</span>
+          </div>
+        </div>
+        <p>Stability. Dependability. Structure. Authority. Logical. Inspired action. Practical. Protective. Control.
+          Focus.
+          Discipline. Traditional relationship. Use logic in love. Unexpressed emotions. Creating processes, structure,
+          discipline, routine in the workplace. Becoming a mentor. Being disciplined about money.</p>
+        <p class="reversed">Tyrant. Domineering. Rigid. Stubborn. Lack of discipline. Recklessness. Power struggle.
+          Competitiveness. Overbearing
+          partner. Low concentration or focus. Bureaucracy. Bad boss. Not disciplined about money. Out of control
+          finances.</p>
+      </article>
+    </li>
+    <li>
+      <article>
+        <img class="major-arcana" src="assets/ma-6.png" alt="">
+        <h2>The Hierophant</h2>
+        <div class="meta">
+          <div class="entry">
+            <img src="assets/taurus.png" alt="">
+            <span>taurus</span>
+          </div>
+          <div class="entry">
+            <img src="assets/earth.png" alt="">
+            <span>earth</span>
+          </div>
+        </div>
+        <p>Teacher. Tradition. Marriage. Beliefs. Commitment. Social groups. Conformity. Conventionality. Education.
+          Knowledge.
+          Beliefs. Safe, traditional partners. Avoiding taboo. Spiritual love. Success in work groups, education,
+          teamwork,
+          mentor. Keeping your money safe. Traditional financial institutions.</p>
+        <p class="reversed">Rebellion. Unconventionality. Non-conformity. New methods. Ignorance. Stale relationship.
+          Values not aligned. Breaking
+          taboo. Bureaucracy. Stifling, confined workplace. Peer pressure. New financial institutions. Taking risks with
+          finances.
+        </p>
+      </article>
+    </li>
+    <li>
+      <article>
+        <img class="major-arcana" src="assets/ma-7.png" alt="">
+        <h2>The Lovers</h2>
+        <div class="meta">
+          <div class="entry">
+            <img src="assets/gemini.png" alt="">
+            <span>gemini</span>
+          </div>
+          <div class="entry">
+            <img src="assets/air.png" alt="">
+            <span>air</span>
+          </div>
+        </div>
+        <p>Love. Perfect union. Relationship. Major choices. Desire. Shared values. Kindred spirits. Romance. Balance.
+          Unity.
+          Loving and supportive relationship. Choices about love. Business partnership. Romance at work. Choices about
+          career.
+          Having to choose between two financial options.</p>
+        <p class="reversed">Disharmony. Imbalance. Conflict. Detachment. Bad choices. Indecision. Cold, detached
+          partner. Too many suitors.
+          Imbalance in relationship. Conflicts between colleagues. Romance at work leading to trouble. Impulsive
+          financial
+          choices. Not responsible about finances.</p>
+      </article>
+    </li>
+    <li>
+      <article>
+        <img class="major-arcana" src="assets/ma-8.png" alt="">
+        <h2>The Chariot</h2>
+        <div class="meta">
+          <div class="entry">
+            <img src="assets/cancer.png" alt="">
+            <span>cancer</span>
+          </div>
+          <div class="entry">
+            <img src="assets/water.png" alt="">
+            <span>water</span>
+          </div>
+        </div>
+        <p>Victory. Overcoming obstacles. Success. Ambition. Momentum. Control. Focus. Determination. Willpower.
+          Self-discipline.
+          Taking action on love. Taking control of your love life. Strong ambitions. Motivation and control at work.
+          Determination
+          to reach financial goals.</p>
+        <p class="reversed">Forceful. No direction. No Control. Powerless. Aggression. Obstacles. Obsession with finding
+          love. Lack of ambition. Too
+          aggressive in career goals. Rushing into or hesitant about financial decisions.</p>
+      </article>
+    </li>
+    <li>
+      <article>
+        <img class="major-arcana" src="assets/ma-9.png" alt="">
+        <h2>Strength</h2>
+        <div class="meta">
+          <div class="entry">
+            <img src="assets/leo.png" alt="">
+            <span>leo</span>
+          </div>
+          <div class="entry">
+            <img src="assets/fire.png" alt="">
+            <span>fire</span>
+          </div>
+        </div>
+        <p>Inner strength. Courage. Bravery. Confidence. Control. Overcoming obstacles. Compassion. Confidence in
+          drawing lovers.
+          Strong caring relationship. Self mastery at work. Bold career moves. Taking big steps. Large purchases.
+          Controlled
+          spending.</p>
+        <p class="reversed">Self-doubt. Weakness. Low confidence. Inadequacy. Cowardice. Forcefulness. Self-esteem
+          issues. Insecurity. Negativity
+          about love. Impostor syndrome. Insecurity. Fear of making big moves. Compulsive spending. Hesitancy about
+          spending.</p>
+      </article>
+    </li>
+    <li>
+      <article>
+        <img class="major-arcana" src="assets/ma-10.png" alt="">
+        <h2>The Hermit</h2>
+        <div class="meta">
+          <div class="entry">
+            <img src="assets/virgo.png" alt="">
+            <span>virgo</span>
+          </div>
+          <div class="entry">
+            <img src="assets/earth.png" alt="">
+            <span>earth</span>
+          </div>
+        </div>
+        <p>Wisdom. Solitude. Self-reflection. Inner guidance. Introspection. Contemplation. Withdrawal. Search for self.
+          Pause in
+          love life to introspect. Self-understanding in love. Contemplating next steps in career. Searching for purpose
+          in
+          career. Contemplating role of finances in happiness. Less focus on material things.</p>
+        <p class="reversed">Loneliness. Isolation. Recluse. Being anti-social. Rejection. Returning to society. Romantic
+          rejection. Feeling distant
+          from partner. Realigning career to internal goals. Being outcast at work. Working alone. Better understanding
+          of
+          material situation.</p>
+      </article>
+    </li>
+    <li>
+      <article>
+        <img class="major-arcana" src="assets/ma-11.png" alt="">
+        <h2>The Wheel of Fortune</h2>
+        <div class="meta">
+          <div class="entry">
+            <img src="assets/jupiter.png" alt="">
+            <span>jupiter</span>
+          </div>
+          <div class="entry">
+            <img src="assets/fire.png" alt="">
+            <span>fire</span>
+          </div>
+        </div>
+        <p>Destiny. Good luck. Decisive moments. Fate. Fortune. Chance. Cycles. Change. Unexpected events. Changes in
+          relationship.
+          Navigating changes with partner. Making adjustments. Luck in career. Opportunites present. Adapting to changes
+          at work.
+          Changes in material situation. Being flexible with finances.</p>
+        <p class="reversed">Bad luck. Lack of control. Clinging to control. Unwelcome changes. Delays. External events
+          affecting relationship. Love
+          life out of control. Failure to adapt at work. Forcing past solutions. Unexpected financial changes.
+          Preparation.</p>
+      </article>
+    </li>
+    <li>
+      <article>
+        <img class="major-arcana" src="assets/ma-12.png" alt="">
+        <h2>Justice</h2>
+        <div class="meta">
+          <div class="entry">
+            <img src="assets/libra.png" alt="">
+            <span>libra</span>
+          </div>
+          <div class="entry">
+            <img src="assets/air.png" alt="">
+            <span>air</span>
+          </div>
+        </div>
+        <p>Karmic justice. Consequences. Legal disputes. Balance. Truth. Honesty. Life lessons. Law. Accountability.
+          Truth.
+          Integrity. Cause and effect. Romantic efforts rewarded. Compromise. Treating partner fairly. Integrity at work
+          rewarded.
+          Remaining accountable and fair. Balancing finances, balancing giving and taking.</p>
+        <p class="reversed">Injustice. Retribution. Dishonesty. Corruption. Unfairness. Avoiding accountability. Unfair
+          romantic expectations.
+          Blaming partner unfairly. Unfair work environment. Dishonesty in career. Untrustworthy financial dealings.</p>
+      </article>
+    </li>
+    <li>
+      <article>
+        <img class="major-arcana" src="assets/ma-13.png" alt="">
+        <h2>The Hanged Man</h2>
+        <div class="meta">
+          <div class="entry">
+            <img src="assets/neptune.png" alt="">
+            <span>neptune</span>
+          </div>
+          <div class="entry">
+            <img src="assets/water.png" alt="">
+            <span>water</span>
+          </div>
+        </div>
+        <p>Feeling trapped. Confined. Uncertainty. Lack of direction. Waiting. Letting go. Shifting perspectives. Sacrifice.
+        Contemplation. Love can’t be rushed. Avoid romantic pressure. Sacrifice for love. Uncertainty about career. Forced
+        break. Thinking of next steps.</p>
+        <p class="reversed">Stalling. Disinterest. Stagnation. Avoiding sacrifice. Standstill. Apathy. New perspectives on love. Changes in romantic
+        life. New career move not working. Procrastination. Indecision. Failed investment. Wasted financial sacrifice.</p>
+      </article>
+    </li>
+    <li>
+      <article>
+        <img class="major-arcana" src="assets/ma-14.png" alt="">
+        <h2>Death</h2>
+        <div class="meta">
+          <div class="entry">
+            <img src="assets/scorpio.png" alt="">
+            <span>scorpio</span>
+          </div>
+          <div class="entry">
+            <img src="assets/water.png" alt="">
+            <span>water</span>
+          </div>
+        </div>
+        <p>Spiritual transformation. New beginnings. Release. Endings. Change. Transitions. Upheaval. Letting go. Changes in
+        relationship, romantic life. Ending relationship. Job transition. Leaving unfulfilling job or career. Financial loss,
+        adapting to it. Changing views of money.</p>
+        <p class="reversed">Fear of change. Repeating negative patterns. Resisting change. Stagnancy. Decay. Resisting change in relationship.
+        Failure to change negative emotional patterns. Staying at an unfulfilling job. Lack of growth. Failure to adapt to
+        financial loss. Continuing unhealthy financial habits.</p>
+      </article>
+    </li>
+    <li>
+      <article>
+        <img class="major-arcana" src="assets/ma-15.png" alt="">
+        <h2>Temperance</h2>
+        <div class="meta">
+          <div class="entry">
+            <img src="assets/sagittarius.png" alt="">
+            <span>sagittarius.png</span>
+          </div>
+          <div class="entry">
+            <img src="assets/fire.png" alt="">
+            <span>fire</span>
+          </div>
+        </div>
+        <p>Moderation. Peace. Patience. Inner calm. Perspective. Tranquility. Harmony. Soulmates. Balance. Serenity. Careful and
+        considerate with love. Being patient with love or lover. Success from patience and moderation. Steady and slow progress.
+        Playing the long game. Diligent saving.</p>
+        <p class="reversed">Imbalance. Excess. Extremes. Discord. Recklessness. Hastiness. Going to extremes for love. All or nothing romances.
+        Impatience. Work-life imbalance. All or nothing at job. Rushed job. Failure to balance long-term needs with short-term
+        happiness.</p>
+      </article>
+    </li>
+    <li>
+      <article>
+        <img class="major-arcana" src="assets/ma-16.png" alt="">
+        <h2>The Devil</h2>
+        <div class="meta">
+          <div class="entry">
+            <img src="assets/capricorn.png" alt="">
+            <span>capricorn</span>
+          </div>
+          <div class="entry">
+            <img src="assets/earth.png" alt="">
+            <span>earth</span>
+          </div>
+        </div>
+        <p>Addiction. Secrecy. Obsession. Sabotage. Toxic relationships. Dependency. Materialism. Powerlessness. Abuse. Oppression.
+        Excess. Limitations. Lust. Hedonism. Selfish disregard for lover’s feelings. Feeling trapped in job. Blaming colleagues.
+        Self-sabotage. Bad financial habits.</p>
+        <p class="reversed">Independence. Freedom. Revelation. Release. Reclaiming power. Reclaiming control. Feeling more in control of love life.
+        Ending co-dependency. More accountability in career path. Feeling empowered at job. Breaking bad financial habits.
+        Feeling financially independent.</p>
+      </article>
+    </li>
+    <li>
+      <article>
+        <img class="major-arcana" src="assets/ma-17.png" alt="">
+        <h2>The Tower</h2>
+        <div class="meta">
+          <div class="entry">
+            <img src="assets/mars.png" alt="">
+            <span>mars</span>
+          </div>
+          <div class="entry">
+            <img src="assets/fire.png" alt="">
+            <span>fire</span>
+          </div>
+        </div>
+        <p>Chaos. Sudden upheaval. Trauma. Unexpected change. Loss. Tragedy. Disaster. Confusion. Pain. Destruction. Trauma.
+        Breakup. Weak relationships ending. Foundational shift in view of love. Sudden job loss. Workplace disruption, chaos.
+        Financial loss. Wake up call regarding finances.</p>
+        <p class="reversed">Averting disaster. Delaying the inevitable. Resisting change. Making adjustments in love. Leaving a weak releationship.
+        Surviving layoffs. Avoiding taking risks in career. Surviving financial disasater. Repeating financial troubles.</p>
+      </article>
+    </li>
+    <li>
+      <article>
+        <img class="major-arcana" src="assets/ma-18.png" alt="">
+        <h2>The Star</h2>
+        <div class="meta">
+          <div class="entry">
+            <img src="assets/aquarius.png" alt="">
+            <span>aquarius</span>
+          </div>
+          <div class="entry">
+            <img src="assets/air.png" alt="">
+            <span>air</span>
+          </div>
+        </div>
+        <p>Hope. Inspiration. Creativity. Contentment. Renewal. Serenetiy. Spirituality. Healing. Positivity. Faith. Rejuvenation.
+        Optimism in love. Healing from past wounds. Positivity brings career rewards. High hopes about the job. Reaching
+        financial goals. Remaining inspired.</p>
+        <p class="reversed">Hopelessness. Despair. Negativity. Lack of faith. Despondent. Extreme self-criticism. Loss of hope. About romance. Lack
+        of confidence. Lack of motivation. Lack of enthusiasm. Pessimism about work. Despair regarding financial situation.</p>
+      </article>
+    </li>
+    <li>
+      <article>
+        <img class="major-arcana" src="assets/ma-19.png" alt="">
+        <h2>The Moon</h2>
+        <div class="meta">
+          <div class="entry">
+            <img src="assets/pisces.png" alt="">
+            <span>pisces</span>
+          </div>
+          <div class="entry">
+            <img src="assets/air.png" alt="">
+            <span>air</span>
+          </div>
+        </div>
+        <p>Intuition. Illusions and lies. Dreams. Uncertainty. Subconscious. Instability. Insecurity. The things that lie in
+        hiding. Confusion. Complexity. Secrets. Complicated romance. Lack of information. Lacking financial knowledge.</p>
+        <p class="reversed">Fear. Deception. Anxiety. Misunderstanding. Misinterpretation. Clarity. Understanding. Deception. Paranoia. Sabotage.
+        Trickery.</p>
+      </article>
+    </li>
+    <li>
+      <article>
+        <img class="major-arcana" src="assets/ma-20.png" alt="">
+        <h2>The Sun</h2>
+        <div class="meta">
+          <div class="entry">
+            <img src="assets/sun.png" alt="">
+            <span>sun</span>
+          </div>
+          <div class="entry">
+            <img src="assets/fire.png" alt="">
+            <span>fire</span>
+          </div>
+        </div>
+        <p>Positivity. Freedom. Joy. Success. Optimism. Confidence. Happiness. Truth. Openness. Vitality. Positivity is attracting
+        romantic interests. Feeling radiant. Successful work projects. Strong financial situation.</p>
+        <p class="reversed">Blocked happiness. Excessive enthusiasm. Pessimism. Unrealistic expectations. Conceitedness. Boredom. Taking love for
+        granted. Being unable to see happiness in relationship. Failure to appreciate work. Overconfidence. Unrealistic beliefs.
+        Hardships are only temporary.</p>
+      </article>
+    </li>
+    <li>
+      <article>
+        <img class="major-arcana" src="assets/ma-21.png" alt="">
+        <h2>Judgment/The Gate</h2>
+        <div class="meta">
+          <div class="entry">
+            <img src="assets/pluto.png" alt="">
+            <span>pluto</span>
+          </div>
+          <div class="entry">
+            <img src="assets/fire.png" alt="">
+            <span>fire</span>
+          </div>
+        </div>
+        <p>Clarity. Self-evaluation. Renewal. Decisiveness. Blame. Forgiveness. Composure. Optimism. Purpose. Reflection.
+        Reckoning. Renewal of love. Making adjustments. Finding career purpose. Accountability.</p>
+        <p class="reversed">Self-doubt. Lack of self-awareness. Failure to learn lessons. Self-loathing. Blaming your partner. Denial about love
+        life. Failure to take responsibility for mistakes. Failure to learn financial lessons. Too self-denying.</p>
+      </article>
+    </li>
+    <li>
+      <article>
+        <img class="major-arcana" src="assets/ma-22.png" alt="">
+        <h2>The World</h2>
+        <div class="meta">
+          <div class="entry">
+            <img src="assets/pluto.png" alt="">
+            <span>pluto</span>
+          </div>
+          <div class="entry">
+            <img src="assets/fire.png" alt="">
+            <span>fire</span>
+          </div>
+        </div>
+        <p>Clarity. Self-evaluation. Renewal. Decisiveness. Blame. Forgiveness. Composure. Optimism. Purpose. Reflection.
+        Reckoning. Renewal of love. Making adjustments. Finding career purpose. Accountability.</p>
+        <p class="reversed">Self-doubt. Lack of self-awareness. Failure to learn lessons. Self-loathing. Blaming your partner. Denial about love
+        life. Failure to take responsibility for mistakes. Failure to learn financial lessons. Too self-denying.</p>
+      </article>
+    </li>
+  </ol>
+</body>
+
+</html>

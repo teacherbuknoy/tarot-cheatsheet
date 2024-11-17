@@ -1,0 +1,96 @@
+<svg width="24" height="24"
+  xmlns="http://www.w3.org/2000/svg" overflow="hidden">
+  <defs>
+    <symbol id="ma-22" viewBox="0 0 24 24">
+      <circle cx="49.929" cy="49.743" r="34" transform="rotate(-30 49.929 49.743)" stroke="currentcolor" stroke-width="2"/>
+      <path d="m11.886 60.171 64.952-37.5" stroke="currentcolor" stroke-width="2" stroke-linecap="round"/>
+    </symbol>
+    <symbol id="ma-20" viewBox="0 0 24 24">
+      <circle cx="51" cy="55" r="24" stroke="currentcolor" stroke-width="2"/>
+      <path d="M36 36a16.001 16.001 0 0 0-16-16M65 36a16.001 16.001 0 0 1 16-16" stroke="currentcolor" stroke-width="2" stroke-linecap="round"/>
+    </symbol>
+    <symbol id="ma-5" viewBox="0 0 24 24">
+      <path d="M50 10v80M66 34 34 66M10 50h80M34 34l32 32" stroke="currentcolor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+    </symbol>
+    <symbol id="ma-19" viewBox="0 0 24 24">
+      <circle cx="50" cy="32" r="19" stroke="currentcolor" stroke-width="2"/>
+      <path fill="currentcolor" d="M49 50h2.5v38H49z"/>
+      <path fill="currentcolor" d="M42 81h17v2H42z"/>
+    </symbol>
+    <symbol id="ma-2" viewBox="0 0 24 24">
+      <path d="M50.284 10.284v80M10.284 50.284h80" stroke="currentcolor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+      <path stroke="currentcolor" stroke-width="2" d="M26 25h49v49H26z"/>
+    </symbol>
+    <symbol id="ma-14" viewBox="0 0 24 24">
+      <circle cx="50" cy="50" r="24" stroke="currentcolor" stroke-width="2"/>
+      <path stroke="currentcolor" stroke-width="2" d="M14 13h73v73H14z"/>
+    </symbol>
+    <symbol id="ma-4" viewBox="0 0 24 24">
+      <path d="M51.918 13.176a36.498 36.498 0 0 1 14.806 1.593c.97.313 1.482 1.43 1.05 2.473L55.052 47.969a4 4 0 0 0 0 3.062l12.732 30.724c.431 1.042-.08 2.16-1.05 2.474a36.5 36.5 0 1 1-14.815-71.053Z" stroke="currentcolor" stroke-width="2" stroke-linejoin="round"/>
+      <path d="M51.478 28.388c3.62-5.449 8.531-9.8 14.231-12.648.926-.462 2.092.003 2.49 1.082l11.975 32.472a2 2 0 0 1-.006 1.4l-12.247 32.36c-.407 1.076-1.578 1.531-2.5 1.06-5.676-2.9-10.55-7.295-14.124-12.777-4.133-6.34-6.329-13.836-6.297-21.504.033-7.667 2.292-15.142 6.478-21.445Z" stroke="currentcolor" stroke-width="2" stroke-linejoin="round"/>
+    </symbol>
+    <symbol id="ma-18" viewBox="0 0 24 24">
+      <circle cx="20" cy="20" r="19" transform="matrix(1 0 0 -1 30 81)" stroke="currentcolor" stroke-width="2"/>
+      <path transform="matrix(1 0 0 -1 49 43)" fill="currentcolor" d="M0 0h2v25H0z"/>
+      <path transform="matrix(1 0 0 -1 31 26)" fill="currentcolor" d="M0 0h39v2H0z"/>
+    </symbol>
+    <symbol id="ma-21" viewBox="0 0 24 24">
+      <circle cx="30" cy="50" r="19" stroke="currentcolor" stroke-width="2"/>
+      <circle cx="70" cy="50" r="19" stroke="currentcolor" stroke-width="2"/>
+    </symbol>
+    <symbol id="ma-6" viewBox="0 0 24 24">
+      <path d="M87.519 20.855a1 1 0 1 0-1.038-1.71l1.038 1.71ZM42.5 47l-.519-.855A1 1 0 0 0 42.5 48v-1ZM70 47l.49.872A1 1 0 0 0 70 46v1ZM12.037 78.73a1 1 0 0 0 .693 1.233l8.664 2.434a1 1 0 0 0 .541-1.926l-7.702-2.163 2.164-7.702a1 1 0 0 0-1.926-.541l-2.434 8.665Zm74.444-59.585-44.5 27 1.038 1.71 44.5-27-1.038-1.71ZM42.5 48H70v-2H42.5v2Zm27.01-1.872-57 32 .98 1.744 57-32-.98-1.744Z" fill="currentcolor"/>
+    </symbol>
+    <symbol id="ma-17" viewBox="0 0 24 24">
+      <path transform="matrix(1 0 0 -1 49 83)" fill="currentcolor" d="M0 0h2v66H0z"/>
+      <path transform="matrix(1 0 0 -1 23 51)" fill="currentcolor" d="M0 0h55v2H0z"/>
+      <path transform="matrix(1 0 0 -1 42 19)" fill="currentcolor" d="M0 0h17v2H0z"/>
+      <path transform="matrix(1 0 0 -1 30 35)" fill="currentcolor" d="M0 0h39v2H0z"/>
+    </symbol>
+    <symbol id="ma-11" viewBox="0 0 24 24">
+      <path d="m50.159 55.907-22.758-33.59a3 3 0 0 0-4.605-.438l-5.917 5.917a3 3 0 0 0 0 4.243l8.485 8.485m24.795 15.383 8.722 12.873a3 3 0 0 1-.342 3.783l-6.16 6.282a3 3 0 0 1-4.264.02l-6.302-6.302a3 3 0 0 1-.362-3.804l8.708-12.852Zm0 0 22.758-33.59a3 3 0 0 1 4.605-.438l5.917 5.917a3 3 0 0 1 0 4.243l-8.485 8.485" stroke="currentcolor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+    </symbol>
+    <symbol id="ma-16" viewBox="0 0 24 24">
+      <circle cx="35" cy="50" r="24" stroke="currentcolor" stroke-width="2"/>
+      <circle cx="65" cy="50" r="24" stroke="currentcolor" stroke-width="2"/>
+    </symbol>
+    <symbol id="ma-8" viewBox="0 0 24 24">
+      <path stroke="currentcolor" stroke-width="2" d="M14 13h73v73H14z"/>
+      <path d="M20.618 80 50.5 20.236 80.382 80H20.618Z" stroke="currentcolor" stroke-width="2"/>
+    </symbol>
+    <symbol id="ma-15" viewBox="0 0 24 24">
+      <path d="M66.697 37.808a25 25 0 1 1-33.984-.286" stroke="currentcolor" stroke-width="2" stroke-linecap="round"/>
+      <path d="M74.64 19a25 25 0 1 1-50 0" stroke="currentcolor" stroke-width="2"/>
+    </symbol>
+    <symbol id="ma-13" viewBox="0 0 24 24">
+      <path d="M20.874 64 50.5 19.796 80.126 64H20.874Z" stroke="currentcolor" stroke-width="2"/>
+      <path d="M20.874 36 50.5 80.204 80.126 36H20.874Z" stroke="currentcolor" stroke-width="2"/>
+    </symbol>
+    <symbol id="ma-12" viewBox="0 0 24 24">
+      <path d="m25 25 50 50M25.033 73.967l50-50" stroke="currentcolor" stroke-width="2" stroke-linecap="round"/>
+      <circle cx="50" cy="50" r="14" stroke="currentcolor" stroke-width="2"/>
+      <circle cx="50" cy="50" r="24" stroke="currentcolor" stroke-width="2"/>
+    </symbol>
+    <symbol id="ma-10" viewBox="0 0 24 24">
+      <circle cx="20" cy="20" r="19" transform="matrix(1 0 0 -1 30 86)" stroke="currentcolor" stroke-width="2"/>
+      <rect width="2" height="34" rx="1" transform="matrix(1 0 0 -1 49 48)" fill="currentcolor"/>
+      <path d="M63 28H37l13-13" stroke="currentcolor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+    </symbol>
+    <symbol id="ma-9" viewBox="0 0 24 24">
+      <circle cx="50" cy="50" r="24" stroke="currentcolor" stroke-width="2"/>
+      <path stroke="currentcolor" stroke-width="2" d="M14 13h73v73H14z"/>
+    </symbol>
+    <symbol id="ma-7" viewBox="0 0 24 24">
+      <circle cx="50" cy="50" r="24" stroke="currentcolor" stroke-width="2"/>
+      <path d="M50 50a25 25 0 0 0-25-25M50 50a25 25 0 0 1 25-25" stroke="currentcolor" stroke-width="2" stroke-linecap="round"/>
+    </symbol>
+    <symbol id="ma-3" viewBox="0 0 24 24">
+      <circle cx="50" cy="50" r="37" stroke="currentcolor" stroke-width="2"/>
+      <rect x="27.094" y="50" width="32.394" height="32.394" rx="2" transform="rotate(-45 27.094 50)" stroke="currentcolor" stroke-width="2" stroke-linejoin="round"/>
+    </symbol>
+    <symbol id="ma-1" viewBox="0 0 24 24">
+      <path d="M50.284 10.284v80M10.284 50.284h80" stroke="currentcolor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+      <rect x="26" y="25" width="49" height="49" rx="24.5" stroke="currentcolor" stroke-width="2"/>
+    </symbol>
+  </defs>
+</svg>
